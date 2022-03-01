@@ -22,11 +22,11 @@ func TestGetDatabaseConnection(t *testing.T) {
 
 	for _, varOfList := range varsListToTest {
 		if varOfList.searchingValue == "" {
-			t.Fatalf("Error: %v is empty", varOfList.searchingName)
+			t.Fatalf("\nError: %v is empty", varOfList.searchingName)
 		}
 
 		if varOfList.searchingValue != varOfList.expected {
-			t.Fatalf("Error: %v has not been obtained successfully:\nExpected = %v\nGot = %v", varOfList.searchingName, varOfList.expected, varOfList.searchingValue)
+			t.Fatalf("\nError: %v has not been obtained successfully:\nExpected = %v\nGot = %v", varOfList.searchingName, varOfList.expected, varOfList.searchingValue)
 		}
 	}
 
